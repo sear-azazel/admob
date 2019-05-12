@@ -113,7 +113,7 @@ namespace Azuma.Manager
             // 広告表示
             if (this.interstitial.IsLoaded())
             {
-                interstitial.Show();
+                this.interstitial.Show();
 #if !UNITY_IOS || UNITY_EDITOR
                 this.callback?.Invoke();
 #endif
